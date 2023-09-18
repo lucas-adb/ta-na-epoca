@@ -28,7 +28,7 @@ services:
     container_name: ta_na_epoca_db
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: taNaEpoca
+      MYSQL_DATABASE: taNaEpocaDB
     ports:
       - 3306:3306
     volumes:
