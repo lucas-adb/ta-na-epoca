@@ -20,16 +20,16 @@ CREATE TABLE IF NOT EXISTS frutas_meses (
   `fruta_mes_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `fruta_id` INT UNSIGNED NOT NULL,
   `mes_id` INT UNSIGNED NOT NULL,
-  PRIMARY KEY (`fruta_mes_id`)
+  PRIMARY KEY (`fruta_mes_id`),
   FOREIGN KEY (`fruta_id`) REFERENCES frutas(`fruta_id`),
-  FOREIGN KEY (`mes_id`) REFERENCES meses(`mes_id`),
+  FOREIGN KEY (`mes_id`) REFERENCES meses(`mes_id`)
 );
 
 INSERT INTO frutas (nome) VALUES
   ('ABACATE'),
   ('ABACAXI'),
   ('ACEROLA');
-INSERT INTO meses (nome) VALUES
+INSERT INTO meses (mes) VALUES
   ('JANEIRO'),
   ('FEVEREIRO'),
   ('MARCO'),
@@ -42,7 +42,7 @@ INSERT INTO meses (nome) VALUES
   ('OUTUBRO'),
   ('NOVEMBRO'),
   ('DEZEMBRO');
-  INSERT INTO frutas_meses (nome) VALUES
+INSERT INTO frutas_meses (fruta_id, mes_id) VALUES
   (1,2),
   (1,3),
   (1,4),
