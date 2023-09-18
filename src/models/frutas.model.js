@@ -1,3 +1,4 @@
+const camelize = require('camelize');
 const connection = require('./connection');
 
 const findAll = async () => {
@@ -5,7 +6,8 @@ const findAll = async () => {
     'SELECT * from taNaEpocaDB.frutas',
   );
 
-  return fruits;
+  // return fruits;
+  return camelize(fruits);
 };
 
 module.exports = {
