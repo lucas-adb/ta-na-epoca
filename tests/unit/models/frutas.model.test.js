@@ -6,7 +6,7 @@ const connection = require('../../../src/models/connection');
 const { frutasModel } = require('../../../src/models');
 const { allFrutas, oneFruta } = require('../../mocks/frutasMocks');
 
-describe('Teste de unidade do model da entidade "frutas"', function () {
+describe('Teste de unidade da model da entidade "frutas"', function () {
   it('Retorna todas as frutas', async function () {
     sinon.stub(connection, 'execute').resolves([allFrutas]);
 
