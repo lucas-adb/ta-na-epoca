@@ -13,6 +13,12 @@ const allFrutas = [
   },
 ];
 
+const oneFruta = {
+    frutaId: 1,
+    nome: 'ABACATE',
+};
+
 module.exports = {
   allFrutas,
+  oneFruta,
 };
