@@ -18,7 +18,17 @@ const findById = async (frutaId) => {
   return camelize(fruit);
 };
 
+const insert = async (nome) => {
+  const [{ frutaId }] = await connection.execute(
+    'INSERT INTO taNaEpocaDB.frutas (nome) VALUES (?)',
+    [nome],
+  );
+
+  return frutaId;
+};
+
 module.exports = {
   findAll,
   findById,
+  insert,
 };

@@ -1,4 +1,5 @@
 const { frutasModel } = require('../models');
+const schema = require('./validations/validationsInput');
 
 const findAll = async () => {
   const frutas = await frutasModel.findAll();
@@ -14,7 +15,17 @@ const findById = async (frutaId) => {
   return { status: 'SUCCESSFUL', data: fruta };
 };
 
+const insert = async (nome) => {
+  const error = schema.validateNewFruit(nome);
+  if (error.status === 'INVALID_VALUE') return error;
+
+  const frutaId = await frutasModel.insert(nome);
+
+  return { status: 'SUCCESSFUL', data: { frutaId, nome } };
+};
+
 module.exports = {
   findAll,
   findById,
+  insert,
 };

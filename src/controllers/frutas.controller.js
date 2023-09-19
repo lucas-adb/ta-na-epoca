@@ -12,7 +12,14 @@ const findById = async (req, res) => {
   return res.status(mapStatusHTTP(status)).json(data);
 };
 
+const insert = async (req, res) => {
+  const { nome } = req.body;
+  const { status, data } = await frutasService.insert(nome);
+  return res.status(mapStatusHTTP(status)).json(data);
+};
+
 module.exports = {
   findAll,
   findById,
+  insert,
 };
