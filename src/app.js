@@ -5,6 +5,6 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/frutas', frutasRoutes);
+app.use('/frutas', frutasRoutes);
 
 module.exports = app;
