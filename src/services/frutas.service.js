@@ -17,7 +17,7 @@ const findById = async (frutaId) => {
 
 const insert = async (nome) => {
   const error = schema.validateNewFruit(nome);
-  if (error.status === 'INVALID_VALUE') return error;
+  if (error.status) return error;
 
   const frutaId = await frutasModel.insert(nome);
 

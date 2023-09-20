@@ -44,7 +44,26 @@ describe('Teste de unidade da service da entidade "frutas"', function () {
 
       expect(result.status).to.be.equal('SUCCESSFUL');
       expect(result.data).to.be.deep.equal({ frutaId: 4, ...newFruta });
-      // expect(result.DATA).to.be.deep.equal(newFruta);
+    });
+
+    it('Deve retornar erro caso não venha um nome', async function () {
+      sinon.stub(frutasModel, 'insert').rejects(new Error());
+
+      const result = await frutasService.insert();
+
+      expect(result.status).to.be.equal('BAD_REQUEST');
+      expect(result.data).to.be.deep.equal({ message: 'É necessário inserir um "nome"' });
+    });
+
+    it('Deve retornar erro caso nome tenha menos que 2 caracteres', async function () {
+      sinon.stub(frutasModel, 'insert').rejects(new Error());
+
+      const result = await frutasService.insert('r');
+
+      expect(result.status).to.be.equal('INVALID_VALUE');
+      expect(result.data).to.be.deep.equal(
+        { message: 'O "nome" deve ter pelo menos 2 caracteres' },
+        );
     });
   });
 
