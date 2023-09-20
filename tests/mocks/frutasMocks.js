@@ -18,7 +18,12 @@ const oneFruta = {
     nome: 'ABACATE',
 };
 
+const newFruta = {
+  nome: 'AMEIXA',
+};
+
 module.exports = {
   allFrutas,
   oneFruta,
+  newFruta,
 };

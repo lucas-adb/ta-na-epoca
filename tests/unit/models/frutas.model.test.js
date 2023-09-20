@@ -4,7 +4,7 @@ const { expect } = chai;
 const sinon = require('sinon');
 const connection = require('../../../src/models/connection');
 const { frutasModel } = require('../../../src/models');
-const { allFrutas, oneFruta } = require('../../mocks/frutasMocks');
+const { allFrutas, oneFruta, newFruta } = require('../../mocks/frutasMocks');
 
 describe('Teste de unidade da model da entidade "frutas"', function () {
   it('Retorna todas as frutas', async function () {
@@ -21,6 +21,14 @@ describe('Teste de unidade da model da entidade "frutas"', function () {
     const result = await frutasModel.findById(1);
 
     expect(result).to.be.deep.equal(oneFruta);
+  });
+
+  it('Cria uma nova fruta', async function () {
+    sinon.stub(connection, 'execute').resolves([{ frutaId: 4 }]);
+
+    const result = await frutasModel.insert(newFruta);
+
+    expect(result).to.be.equal(4);
   });
 
   afterEach(function () {
