@@ -3,7 +3,7 @@ const chai = require('chai');
 const { expect } = chai;
 const sinon = require('sinon');
 const { frutasModel } = require('../../../src/models');
-const { allFrutas, oneFruta } = require('../../mocks/frutasMocks');
+const { allFrutas, oneFruta, newFruta } = require('../../mocks/frutasMocks');
 const { frutasService } = require('../../../src/services');
 
 describe('Teste de unidade da service da entidade "frutas"', function () {
@@ -33,6 +33,18 @@ describe('Teste de unidade da service da entidade "frutas"', function () {
   
       expect(result.status).to.be.equal('NOT_FOUND');
       expect(result.data).to.be.deep.equal({ message: 'Fruta não encontrada' });
+    });
+  });
+
+  describe('Verifica se é possível criar uma nova fruta', function () {
+    it('Deve retornar a criação de uma fruta', async function () {
+      sinon.stub(frutasModel, 'insert').resolves(4);
+
+      const result = await frutasService.insert('AMEIXA');
+
+      expect(result.status).to.be.equal('SUCCESSFUL');
+      expect(result.data).to.be.deep.equal({ frutaId: 4, ...newFruta });
+      // expect(result.DATA).to.be.deep.equal(newFruta);
     });
   });
 
