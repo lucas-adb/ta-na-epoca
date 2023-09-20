@@ -27,8 +27,16 @@ const insert = async (nome) => {
   return frutaId;
 };
 
+const deleteFruit = async (frutaId) => {
+  await connection.execute(
+    'DELETE FROM taNaEpocaDB.frutas WHERE fruta_id = ?',
+    [frutaId],
+  );
+};
+
 module.exports = {
   findAll,
   findById,
   insert,
+  deleteFruit,
 };

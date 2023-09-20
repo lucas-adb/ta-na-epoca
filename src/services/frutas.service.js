@@ -24,8 +24,20 @@ const insert = async (nome) => {
   return { status: 'SUCCESSFUL', data: { frutaId, nome } };
 };
 
+const deleteFruit = async (frutaId) => {
+  const fruta = await frutasModel.findById(frutaId);
+  if (!fruta) {
+    return { status: 'NOT_FOUND', data: { message: 'Fruta não encontrada' } };
+  }
+  // console.log(fruta);
+  await frutasModel.deleteFruit(frutaId);
+  return { status: 'SUCCESSFUL', data: `fruta ${fruta.nome} deletada` };
+  // return { status: 'SUCCESSFUL', data: { message: fruta.data } };
+};
+
 module.exports = {
   findAll,
   findById,
   insert,
+  deleteFruit,
 };

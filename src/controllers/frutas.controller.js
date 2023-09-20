@@ -18,8 +18,15 @@ const insert = async (req, res) => {
   return res.status(mapStatusHTTP(status)).json(data);
 };
 
+const deleteFruit = async (req, res) => {
+  const { id } = req.params;
+  const { status, data } = await frutasService.deleteFruit(id);
+  return res.status(mapStatusHTTP(status)).json(data);
+};
+
 module.exports = {
   findAll,
   findById,
   insert,
+  deleteFruit,
 };
