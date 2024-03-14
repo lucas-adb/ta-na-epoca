@@ -10,7 +10,7 @@ export default function Header() {
         >
           Tá na época?
         </Link>
-        <Link href="/calendario">Calendário</Link>
+        <Link href="/calendario" className="hover:text-green-800">Calendário</Link>
       </nav>
     </header>
   );
