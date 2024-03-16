@@ -28,36 +28,42 @@ const fruits = [
     name: "Maracujá",
     color: "yellow",
     tailwindColor: "yellow-400",
+    tailwindBgColor: "bg-yellow-400"
   },
   {
     id: 2,
     name: "Cebola",
     color: "purple",
     tailwindColor: "purple-400",
+    tailwindBgColor: "bg-purple-400"
   },
   {
     id: 3,
     name: "Alface",
     color: "green",
     tailwindColor: "green-400",
+    tailwindBgColor: "bg-green-400"
   },
   {
     id: 4,
     name: "Maçã",
     color: "red",
     tailwindColor: "red-400",
+    tailwindBgColor: "bg-red-400"
   },
   {
     id: 5,
     name: "Banana",
     color: "yellow",
     tailwindColor: "yellow-400",
+    tailwindBgColor: "bg-yellow-400"
   },
   {
     id: 6,
     name: "Mirtilo",
     color: "blue",
     tailwindColor: "blue-400",
+    tailwindBgColor: "bg-blue-400"
   },
 ];
 
@@ -72,7 +78,7 @@ export const SimpleVariant = () => {
       {fruits.map((f) => (
         <SimpleDrag key={f.id}>
           <motion.div
-            className={`border-gray-800 p-2 border-2 lg:border-4 lg:p-4 rounded-full bg-${f.tailwindColor}`}
+            className={`border-gray-800 p-2 border-2 lg:border-4 lg:p-4 rounded-full ${f.tailwindBgColor}`}
             variants={item}
           >
             <p className="font-semibold text-1xl lg:text-3xl">{f.name}</p>
