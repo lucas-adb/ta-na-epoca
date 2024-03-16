@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import SimpleDrag from "./SimpleDrag";
+import { FruitOrVegetable, fruitsAndVegetables } from "@/data/fruitsAndVegetables";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -22,52 +23,26 @@ const item = {
   },
 };
 
-const fruits = [
-  {
-    id: 1,
-    name: "Maracujá",
-    color: "yellow",
-    tailwindColor: "yellow-400",
-    tailwindBgColor: "bg-yellow-400"
-  },
-  {
-    id: 2,
-    name: "Cebola",
-    color: "purple",
-    tailwindColor: "purple-400",
-    tailwindBgColor: "bg-purple-400"
-  },
-  {
-    id: 3,
-    name: "Alface",
-    color: "green",
-    tailwindColor: "green-400",
-    tailwindBgColor: "bg-green-400"
-  },
-  {
-    id: 4,
-    name: "Maçã",
-    color: "red",
-    tailwindColor: "red-400",
-    tailwindBgColor: "bg-red-400"
-  },
-  {
-    id: 5,
-    name: "Banana",
-    color: "yellow",
-    tailwindColor: "yellow-400",
-    tailwindBgColor: "bg-yellow-400"
-  },
-  {
-    id: 6,
-    name: "Mirtilo",
-    color: "blue",
-    tailwindColor: "blue-400",
-    tailwindBgColor: "bg-blue-400"
-  },
-];
+const filterByActualMonth = (f: any) => {
+  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+  const month = new Date().getMonth();
+
+  return f.filter((f: any) => f.harvestMonths.includes(monthNames[month]));
+}
 
 export const SimpleVariant = () => {
+  const colorVariants = {
+    red: "bg-red-400",
+    yellow: "bg-yellow-400",
+    green: "bg-green-400",
+    blue: "bg-blue-400",
+    purple: "bg-purple-400",
+    orange: "bg-orange-400",
+  };
+
+  const filteredFruitsAndVegetables = filterByActualMonth(fruitsAndVegetables);
+
   return (
     <motion.div
       className="flex flex-wrap justify-between gap-2"
@@ -75,7 +50,7 @@ export const SimpleVariant = () => {
       initial="hidden"
       animate="visible"
     >
-      {fruits.map((f) => (
+      {filteredFruitsAndVegetables.map((f: FruitOrVegetable) => (
         <SimpleDrag key={f.id}>
           <motion.div
             className={`border-gray-800 p-2 border-2 lg:border-4 lg:p-4 rounded-full ${f.tailwindBgColor}`}
