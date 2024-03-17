@@ -1,14 +1,6 @@
-export type FruitOrVegetable = {
-  id: number;
-  name: string;
-  color: string;
-  tailwindColor: string;
-  tailwindBgColor: string;
-  harvestMonths: Array<string>;
-  type: "fruit" | "vegetable";
-}
+import { Food } from "@/types/types";
 
-export const fruitsAndVegetables: FruitOrVegetable[] = [
+export const fruitsAndVegetables: Food[] = [
   {
     id: 1,
     name: "Maracujá",

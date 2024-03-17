@@ -1,7 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import SimpleDrag from "./SimpleDrag";
-import { FruitOrVegetable, fruitsAndVegetables } from "@/data/fruitsAndVegetables";
+import { fruitsAndVegetables } from "@/data/fruitsAndVegetables";
+import { filterFoodsByCurrentMonth } from "@/app/utils/utils";
+import { Food } from "@/types/types";
+
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -23,14 +26,6 @@ const item = {
   },
 };
 
-const filterByActualMonth = (f: any) => {
-  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-  const month = new Date().getMonth();
-
-  return f.filter((f: any) => f.harvestMonths.includes(monthNames[month]));
-}
-
 export const SimpleVariant = () => {
   const colorVariants = {
     red: "bg-red-400",
@@ -41,7 +36,7 @@ export const SimpleVariant = () => {
     orange: "bg-orange-400",
   };
 
-  const filteredFruitsAndVegetables = filterByActualMonth(fruitsAndVegetables);
+  const filteredFruitsAndVegetables = filterFoodsByCurrentMonth(fruitsAndVegetables);
 
   return (
     <motion.div
@@ -50,7 +45,7 @@ export const SimpleVariant = () => {
       initial="hidden"
       animate="visible"
     >
-      {filteredFruitsAndVegetables.map((f: FruitOrVegetable) => (
+      {filteredFruitsAndVegetables.map((f: Food) => (
         <SimpleDrag key={f.id}>
           <motion.div
             className={`border-gray-800 p-2 border-2 lg:border-4 lg:p-4 rounded-full ${f.tailwindBgColor}`}
