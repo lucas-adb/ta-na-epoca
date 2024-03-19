@@ -26,10 +26,10 @@ export const FoodItem = ({ food }: { food: Food }) => {
   return (
     <SimpleDrag>
       <motion.div
-        className={`border-gray-800 p-2 border-2 lg:border-4 lg:p-4 rounded-full ${bgColor}`}
+        className={`border-gray-800 p-4 border-4 md:border-4 md:p-4 rounded-full ${bgColor}`}
         variants={item}
       >
-        <p className="font-semibold text-1xl lg:text-3xl">{food.name}</p>
+        <p className="font-semibold text-xl sm:text-2xl md:text-3xl">{food.name}</p>
       </motion.div>
     </SimpleDrag>
   );

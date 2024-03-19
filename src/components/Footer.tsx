@@ -8,7 +8,7 @@ export default function Footer() {
           Fonte:{" "}
           <Link 
             href="https://ceagesp.gov.br/sala-imprensa/sazonalidade-de-compras/"
-            className="hover:text-green-900"
+            className="hover:text-green-900 text-sm sm:text-base"
           >
             CEAGESP
           </Link>
@@ -16,7 +16,7 @@ export default function Footer() {
 
         <Link
           href="https://lucasalves.dev/"
-          className="font-sans font-extrabold text-green-900 text-2xl transition-transform hover:-translate-y-1"
+          className="font-sans font-extrabold text-green-900 transition-transform hover:-translate-y-1 text-base sm:text-2xl"
         >
           Lucas Alves
         </Link>

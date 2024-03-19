@@ -18,7 +18,7 @@ const container = {
 export const SimpleVariant = ({ filteredFoods }: { filteredFoods: Food[] }) => {  
   return (
     <motion.div
-      className="flex flex-wrap justify-between gap-2"
+      className="flex flex-wrap justify-center sm:justify-between gap-2"
       variants={container}
       initial="hidden"
       animate="visible"
