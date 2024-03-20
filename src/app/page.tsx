@@ -1,26 +1,26 @@
 import Link from "next/link";
 import SimpleFadeIn from "@/components/framer/SimpleFadeIn";
 import { SimpleVariant } from "@/components/framer/SimpleVariant";
+import { filterFoodsByCurrentMonth } from "./utils/utils";
+import { fruitsAndVegetables } from "@/data/fruitsAndVegetables";
 
 export default function Home() {
+  const filteredFoods = filterFoodsByCurrentMonth(fruitsAndVegetables);
+
   return (
-    <main className="flex-grow max-w-4xl mx-auto flex flex-col lg:justify-center">
-      <section className="flex flex-col items-center gap-8">
-        <SimpleFadeIn>
-          <h1 className="font-serif text-5xl lg:text-8xl text-green-900">
+    <main className="flex-grow max-w-4xl mx-auto flex flex-col sm:justify-center">
+      <SimpleFadeIn>
+        <section className="flex flex-col items-center gap-10 sm:gap-8 px-6 sm:px-4 mx-auto py-8">
+          <h1 className="font-serif text-6xl md:text-8xl text-green-900 text-center">
             Tá na época de:
           </h1>
-        </SimpleFadeIn>
 
-        <SimpleFadeIn>
           <div className="flex flex-wrap justify-between gap-2">
-            <SimpleVariant />
+            <SimpleVariant filteredFoods={filteredFoods} />
           </div>
-        </SimpleFadeIn>
 
-        <SimpleFadeIn>
-          <section>
-            <p>
+          <div>
+            <p className="text-center">
               Confira o{" "}
               <Link
                 href="/calendario"
@@ -30,9 +30,10 @@ export default function Home() {
               </Link>{" "}
               completo das safras
             </p>
-          </section>
-        </SimpleFadeIn>
-      </section>
+          </div>
+
+        </section>
+      </SimpleFadeIn>
     </main>
   );
 }

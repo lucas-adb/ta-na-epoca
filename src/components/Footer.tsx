@@ -4,11 +4,19 @@ export default function Footer() {
   return (
     <footer>
       <nav className="mx-auto max-w-screen-xl flex justify-between px-4 sm:px-6 lg:px-8 items-center h-16">
-        <p>Fontes: CEASA, G1, Folha de São Paulo</p>
+        <p className="transition-transform hover:-translate-y-1">
+          Fonte:{" "}
+          <Link 
+            href="https://ceagesp.gov.br/sala-imprensa/sazonalidade-de-compras/"
+            className="hover:text-green-900 text-sm sm:text-base"
+          >
+            CEAGESP
+          </Link>
+        </p>
 
         <Link
-          href="/"
-          className="font-sans font-extrabold text-green-900 text-2xl"
+          href="https://lucasalves.dev/"
+          className="font-sans font-extrabold text-green-900 transition-transform hover:-translate-y-1 text-base sm:text-2xl"
         >
           Lucas Alves
         </Link>
