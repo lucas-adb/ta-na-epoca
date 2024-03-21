@@ -11,22 +11,37 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
-enum Type {
+enum FoodType {
   FRUIT
   VEGETABLE
 }
 
+enum MonthName {
+  JANUARY
+  FEBRUARY
+  MARCH
+  APRIL
+  MAY
+  JUNE
+  JULY
+  AUGUST
+  SEPTEMBER
+  OCTOBER
+  NOVEMBER
+  DECEMBER
+}
+
 model Food {
   id Int @id @default(autoincrement())
-  name String
+  name String @unique
   color String
-  type Type
+  type FoodType
   months FoodsMonths[]
 }
 
 model Month {
   id Int @id @default(autoincrement())
-  name String
+  name MonthName @unique
   foods FoodsMonths[]
 }
 
