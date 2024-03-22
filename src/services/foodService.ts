@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 export async function getFoods() {
@@ -6,23 +6,33 @@ export async function getFoods() {
   return foods;
 }
 
+export async function getFoodsWithMonths() {
+  const foods = await prisma.food.findMany({
+    include: {
+      months: true,
+    },
+  });
+
+  return foods;
+}
+
 export async function getFoodsOfCurrentMonth() {
   const currentMonth = new Date().getMonth();
 
-    const foods = await prisma.food.findMany({
-      where: {
-        months: {
-          some: {
-            monthId: {
-              equals: currentMonth + 1,
-            },
+  const foods = await prisma.food.findMany({
+    where: {
+      months: {
+        some: {
+          monthId: {
+            equals: currentMonth + 1,
           },
         },
       },
-      include: {
-        months: true,
-      },
-    });
-  
-    return foods
+    },
+    include: {
+      months: true,
+    },
+  });
+
+  return foods;
 }
