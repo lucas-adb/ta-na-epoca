@@ -7,15 +7,24 @@ export default function Header() {
         <Link
           href="/"
           className="font-sans font-extrabold text-green-900 text-base sm:text-2xl transition-transform hover:-translate-y-1"
+          id="logo"
         >
           Tá na época?
         </Link>
 
         <div className="flex gap-4 justify-center items-center">
-          <Link href="/calendario" className="hover:text-green-900 transition-transform hover:-translate-y-1 text-sm sm:text-base">
+          <Link
+            href="/calendario"
+            className="hover:text-green-900 transition-transform hover:-translate-y-1 text-sm sm:text-base"
+            id="calendario"
+          >
             Calendário
           </Link>
-          <Link href="/sobre" className="hover:text-green-900 transition-transform hover:-translate-y-1 text-sm sm:text-base">
+          <Link
+            href="/sobre"
+            className="hover:text-green-900 transition-transform hover:-translate-y-1 text-sm sm:text-base"
+            id="sobre"
+          >
             Sobre
           </Link>
         </div>
