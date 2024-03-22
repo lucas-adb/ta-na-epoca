@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import SimpleDrag from "./framer/SimpleDrag";
+import FramerMotionDrag from "./framer/FramerMotionDrag";
 import { Food } from "@/types/types";
 
 const item = {
@@ -12,6 +12,7 @@ const item = {
 
 // const only created so that the correct bg colors are loaded
 const tailwindDynamicColorsFix: { [key: string]: string } = {
+  brown: "bg-yellow-700",
   red: "bg-red-400",
   yellow: "bg-yellow-400",
   green: "bg-green-400",
@@ -24,13 +25,13 @@ export const FoodItem = ({ food }: { food: Food }) => {
   const bgColor = tailwindDynamicColorsFix[food.color];
 
   return (
-    <SimpleDrag>
+    <FramerMotionDrag>
       <motion.div
         className={`border-gray-800 p-4 border-4 md:border-4 md:p-4 rounded-full ${bgColor}`}
         variants={item}
       >
         <p className="font-semibold text-xl sm:text-2xl md:text-3xl">{food.name}</p>
       </motion.div>
-    </SimpleDrag>
+    </FramerMotionDrag>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-export default function SimpleDrag({
+export default function FramerMotionDrag({
   children,
 }: {
   children: React.ReactNode;

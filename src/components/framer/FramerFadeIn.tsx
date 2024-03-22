@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion";
 
-export default function SimpleFadeIn({ children }: { children: React.ReactNode }) {
+export default function FramerFadeIn({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
