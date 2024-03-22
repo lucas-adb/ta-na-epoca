@@ -4,6 +4,32 @@ import { SimpleVariant } from "@/components/framer/SimpleVariant";
 import { filterFoodsByCurrentMonth } from "./utils/utils";
 import { fruitsAndVegetables } from "@/data/fruitsAndVegetables";
 
+import { sql } from "@vercel/postgres";
+
+import { PrismaClient } from '@prisma/client';
+import { NewFoodItem } from "@/components/NewFoodItem";
+import { NewSimpleVariant } from "@/components/framer/NewSimpleVariant";
+const prisma = new PrismaClient();
+
+async function Test(): Promise<JSX.Element> {
+  const rows = await prisma.food.findMany();
+
+  // console.log(rows);
+
+  // return (
+  //   <div>
+  //     {rows.map((row) => (
+  //       <NewFoodItem key={row.id} food={row} />
+  //     ))}
+  //   </div>
+  // );
+
+  return (
+    <NewSimpleVariant filteredFoods={rows} />
+  )
+}
+
+
 export default function Home() {
   const filteredFoods = filterFoodsByCurrentMonth(fruitsAndVegetables);
 
@@ -17,6 +43,10 @@ export default function Home() {
 
           <div className="flex flex-wrap justify-between gap-2">
             <SimpleVariant filteredFoods={filteredFoods} />
+          </div>
+
+          <div>
+            <Test />
           </div>
 
           <div>

@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
-import { MonthName, PrismaClient } from '@prisma/client';
-import { monthNames } from '@/app/utils/utils';
+import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
