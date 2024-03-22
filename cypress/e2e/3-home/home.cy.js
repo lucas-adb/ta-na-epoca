@@ -1,50 +1,51 @@
 describe('Navigation', () => {
   it('should navigate to the home page', () => {
-    // Start from the index page
     cy.visit('http://localhost:3000/')
  
-    // Find the logo in the header and click it
     cy.get('#logo').click()
 
-    // Check if the URL is correct
     cy.url().should('equal', 'http://localhost:3000/')
   })
+
   it('should navigate to the calendar page', () => {
-    // Start from the index page
     cy.visit('http://localhost:3000/')
  
-    // Find the calendar link in the header and click it
     cy.get('#calendario').click()
 
-    // Check if the URL is correct
     cy.url().should('equal', 'http://localhost:3000/calendario')
   })
-  it('should navigate to the about page', () => {
-    // Start from the index page
+
+  it('should navigate to the calendar page through main content', () => {
     cy.visit('http://localhost:3000/')
+ 
+    cy.get('#calendario-main').click()
 
-    // Find the about link in the header and click it
-    cy.get('#sobre').click()
-
-    // Check if the URL is correct
-    cy.url().should('equal', 'http://localhost:3000/sobre')
+    cy.url().should('equal', 'http://localhost:3000/calendario')
   })
+
   it('should navigate to the portfolio page', () => {
-    // Start from the index page
     cy.visit('http://localhost:3000/')
 
-    // Find the portfolio link in the footer and click it
     cy.get('#portfolio')
       .should('have.attr', 'href')
       .and('equal', 'https://lucasalves.dev/')
   })
+
   it('should navigate to the source page', () => {
-    // Start from the index page
     cy.visit('http://localhost:3000/')
 
-    // Find the source link in the footer and click it
     cy.get('#source')
       .should('have.attr', 'href')
       .and('equal', 'https://ceagesp.gov.br/sala-imprensa/sazonalidade-de-compras/')
+  })
+})
+
+describe('Main content', () => {
+  it('should display the main elements', () => {
+    cy.visit('http://localhost:3000/')
+
+    cy.get('h1').contains('Tá na época de:')
+
+    cy.get('[id^=food-]').its('length').should('be.gt', 1)
   })
 })

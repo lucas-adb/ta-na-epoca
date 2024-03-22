@@ -28,6 +28,7 @@ export const FoodItem = ({ food }: { food: Food }) => {
     <FramerMotionDrag>
       <motion.div
         className={`border-gray-800 p-4 border-4 md:border-4 md:p-4 rounded-full ${bgColor}`}
+        id={`food-${food.id}`}
         variants={item}
       >
         <p className="font-semibold text-xl sm:text-2xl md:text-3xl">{food.name}</p>

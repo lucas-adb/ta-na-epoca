@@ -21,6 +21,7 @@ export default function Home() {
               <Link
                 href="/calendario"
                 className="text-green-900 font-bold hover:text-green-700"
+                id="calendario-main"
               >
                 calendário
               </Link>{" "}
