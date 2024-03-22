@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Food } from "@/types/types";
+import { Food, FoodWithMonths } from "@/types/types";
 import { FoodItem } from "../FoodItem";
 
 const container = {
@@ -15,7 +15,7 @@ const container = {
   },
 };
 
-export const SimpleVariant = ({ filteredFoods }: { filteredFoods: Food[] }) => {  
+export const FramerMotionVariant = ({ filteredFoods } : {filteredFoods: FoodWithMonths[]}) => {  
   return (
     <motion.div
       className="flex flex-wrap justify-center sm:justify-space-evenly gap-2"

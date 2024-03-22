@@ -1,22 +1,18 @@
 import Link from "next/link";
-import SimpleFadeIn from "@/components/framer/SimpleFadeIn";
-import { SimpleVariant } from "@/components/framer/SimpleVariant";
-import { filterFoodsByCurrentMonth } from "./utils/utils";
-import { fruitsAndVegetables } from "@/data/fruitsAndVegetables";
+import FramerFadeIn from "@/components/framer/FramerFadeIn";
+import FoodCards from "@/components/FoodCards";
 
 export default function Home() {
-  const filteredFoods = filterFoodsByCurrentMonth(fruitsAndVegetables);
-
   return (
     <main className="flex-grow max-w-4xl mx-auto flex flex-col sm:justify-center">
-      <SimpleFadeIn>
+      <FramerFadeIn>
         <section className="flex flex-col items-center gap-10 sm:gap-8 px-6 sm:px-4 mx-auto py-8">
           <h1 className="font-serif text-6xl md:text-8xl text-green-900 text-center">
             Tá na época de:
           </h1>
 
           <div className="flex flex-wrap justify-between gap-2">
-            <SimpleVariant filteredFoods={filteredFoods} />
+            <FoodCards />
           </div>
 
           <div>
@@ -25,6 +21,7 @@ export default function Home() {
               <Link
                 href="/calendario"
                 className="text-green-900 font-bold hover:text-green-700"
+                id="calendario-main"
               >
                 calendário
               </Link>{" "}
@@ -33,7 +30,7 @@ export default function Home() {
           </div>
 
         </section>
-      </SimpleFadeIn>
+      </FramerFadeIn>
     </main>
   );
 }
