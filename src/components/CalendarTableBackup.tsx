@@ -1,93 +1,121 @@
 import { getFoodsWithMonths } from "@/services/foodService";
 import { FramerMotionVariant } from "./framer/FramerMotionVariant";
 
-export default async function CalendarTableBackup(): Promise<JSX.Element> {
+// const only created so that the correct bg colors are loaded
+const tailwindDynamicColorsFix: { [key: string]: string } = {
+  brown: "text-yellow-700",
+  red: "text-red-400",
+  yellow: "text-yellow-400",
+  green: "text-green-400",
+  blue: "text-blue-400",
+  purple: "text-purple-400",
+  orange: "text-orange-400",
+};
+
+export default async function CalendarTable(): Promise<JSX.Element> {
   // const rows = await getFoods();
   const rows = await getFoodsWithMonths();
+
+  // const fontColor = tailwindDynamicColorsFix[food.color];
 
   // console.log(rows[0])
 
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full divide-y-2 divide-gray-800 text-sm">
-        <thead className="text-left">
+    <div className="overflow-x-auto rounded-lg border border-gray-200">
+      <table className="min-w-full divide-y-2 divide-gray-200 text-sm">
+        <thead className="ltr:text-left rtl:text-right">
           <tr>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
               Nome
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Janeiro
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Jan
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Fevereiro
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Fev
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Março
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Abr
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Abril
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Jan
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Maio
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Fev
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Junho
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Abr
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Julho
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Jan
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Agosto
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Fev
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Setembro
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Abr
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Outubro
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Jan
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Novembro
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Fev
             </th>
-            <th className="text-left whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-              Dezembro
+            <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Abr
             </th>
           </tr>
         </thead>
-        <tbody>
-          {/* <tr>
-          <td>Fruta</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-        </tr> */}
-          {rows.map((row) => (
-            <tr key={row.id}>
-              <td>{row.name}</td>
-              <td>{row.months.some((m) => m.monthId === 1) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 2) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 3) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 4) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 5) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 6) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 7) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 8) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 9) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 10) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 11) ? "x" : ""}</td>
-              <td>{row.months.some((m) => m.monthId === 12) ? "x" : ""}</td>
-            </tr>
-          ))}
+
+        <tbody className="divide-y divide-gray-200">
+          {rows.map((row) => {
+            const fontColor = tailwindDynamicColorsFix[row.color];
+            const monthsNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+            return (
+              <tr key={row.id} className="text-center">
+                <td>{row.name}</td>
+                {monthsNumbers.map((monthId) => (
+                  <td key={monthId}>
+                    {row.months.some((m) => m.monthId === monthId) ? (
+                      <p
+                        className={`text-yellow-400 text-3xl font-bold ${fontColor}`}
+                      >
+                        ·
+                      </p>
+                    ) : (
+                      ""
+                    )}
+                  </td>
+                ))}
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
   );
 }
+
+{/* {rows.map((row) => {
+  const fontColor = tailwindDynamicColorsFix[row.color];
+
+  return (
+    <tr key={row.id} className="text-center">
+      <td>{row.name}</td>
+      {Array.from({ length: 12 }, (_, i) => i + 1).map((monthId) => (
+        <td key={monthId}>
+          {row.months.some((m) => m.monthId === monthId) ? (
+            <p
+              className={`text-yellow-400 text-3xl font-bold ${fontColor}`}
+            >
+              ·
+            </p>
+          ) : (
+            ""
+          )}
+        </td>
+      ))}
+    </tr>
+  );
+})} */}
