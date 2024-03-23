@@ -21,13 +21,13 @@ export default async function CalendarTableRows(): Promise<JSX.Element> {
         const fontColor = tailwindDynamicColorsFix[row.color];
 
         return (
-          <tr key={row.id} className="text-center">
-            <td>{row.name}</td>
+          <tr key={row.id} className="hover:bg-gray-100">
+            <td className="px-4 py-2">{row.name}</td>
             {monthsNumbers.map((monthId) => (
-              <td key={monthId}>
+              <td key={monthId} className="px-4 py-2 text-center">
                 {row.months.some((m) => m.monthId === monthId) ? (
                   <p
-                    className={`text-yellow-400 text-3xl font-bold ${fontColor}`}
+                    className={`text-4xl font-bold ${fontColor}`}
                   >
                     ·
                   </p>
