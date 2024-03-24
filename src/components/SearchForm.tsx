@@ -1,0 +1,81 @@
+"use client"; 
+import { useState } from "react";
+import { redirect, useRouter } from 'next/navigation'
+
+export default function SearchForm() {
+  const [foodName, setFoodName] = useState("");
+  const [selectedType, setSelectedType] = useState("");
+  const [selectedMonth, setSelectedMonth] = useState("");
+
+  const router = useRouter()
+
+  function handleSubmit(event: React.FormEvent) {
+    event.preventDefault();
+    console.log(foodName);
+    console.log(selectedType);
+    console.log(selectedMonth);
+
+    // router.push(`/calendario/busca/${foodName}/${selectedType}/${selectedMonth}`)
+    // redirect(`/calendario/busca/${foodName}/${selectedType}/${selectedMonth}`)
+    // redirect(`/calendario/busca/`)
+
+  // Construa a string de parâmetros de consulta
+  const queryParams = `?food=${foodName}&type=${selectedType}&month=${selectedMonth}`;
+
+  // Anexe a string de parâmetros de consulta à URL
+  router.push(`/calendario/busca/${queryParams}`);
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="flex justify-center gap-4">
+      <input
+        type="search"
+        placeholder="Pesquisar"
+        value={foodName}
+        onChange={(e) => setFoodName(e.target.value)}
+        className="w-1/2 px-4 py-2 rounded-lg border border-gray-200 shadow-md"
+      />
+
+      <select
+        name="type"
+        id="type"
+        value={selectedType}
+        onChange={(e) => setSelectedType(e.target.value)}
+        className="rounded-lg border-gray-200 shadow-md"
+      >
+        <option value="">Tipo:</option>
+        <option value="FRUIT">Fruta</option>
+        <option value="VEGETABLE">Vegetal</option>
+      </select>
+
+      <select
+        name="type"
+        id="type"
+        value={selectedMonth}
+        onChange={(e) => setSelectedMonth(e.target.value)}
+        className="rounded-lg border-gray-200 shadow-md"
+      >
+        <option value="">Mês:</option>
+        <option value="01">Jan</option>
+        <option value="02">Fev</option>
+        <option value="03">Mar</option>
+        <option value="04">Abr</option>
+        <option value="05">Mai</option>
+        <option value="06">Jun</option>
+        <option value="07">Jul</option>
+        <option value="08">Ago</option>
+        <option value="09">Set</option>
+        <option value="10">Out</option>
+        <option value="11">Nov</option>
+        <option value="12">Dez</option>
+      </select>
+
+      <button
+        type="submit"
+        className="px-4 py-2 bg-green-900 text-white rounded-lg shadow-md"
+      >
+        Pesquisar
+      </button>
+    </form>
+  );
+}
