@@ -36,7 +36,7 @@ export default function SearchForm() {
 
         <select
           name="type"
-          id="type"
+          id="type-select"
           value={selectedType}
           onChange={(e) => setSelectedType(e.target.value)}
           className="rounded-lg border-gray-200 shadow-md cursor-pointer"
@@ -47,8 +47,8 @@ export default function SearchForm() {
         </select>
 
         <select
-          name="type"
-          id="type"
+          name="month"
+          id="month-select"
           value={selectedMonth}
           onChange={(e) => setSelectedMonth(e.target.value)}
           className="rounded-lg border-gray-200 shadow-md cursor-pointer"
