@@ -1,4 +1,8 @@
-import { CalendarSearchParams, TypeOfFood } from "@/types/types";
+import {
+  CalendarSearchParams,
+  FoodWithMonths,
+  TypeOfFood,
+} from "@/types/types";
 import { Prisma, PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
@@ -38,17 +42,33 @@ export async function getFoodsOfCurrentMonth() {
   return foods;
 }
 
-export async function calendarSearchParamsValidation(food: string, type: TypeOfFood, month: string) {
+export function validateSearchParams(
+  food: string,
+  type: TypeOfFood,
+  month: string
+): boolean {
+  return food !== undefined && type !== undefined && month !== undefined;
+}
+
+export function prepareSearchParams(
+  food: string,
+  type: TypeOfFood,
+  month: string
+): CalendarSearchParams {
   const params: CalendarSearchParams = {};
 
   if (food) params.food = food;
   if (type) params.type = type;
   if (month) params.month = parseInt(month);
 
-  return await getFoodByParams(params);
+  return params;
 }
 
-export async function getFoodByParams(params: { food?: string, type?: TypeOfFood, month?: number }) {
+export async function getFoodByParams(params: {
+  food?: string;
+  type?: TypeOfFood;
+  month?: number;
+}) {
   const whereClause: Prisma.FoodWhereInput = {};
 
   if (params.food) {

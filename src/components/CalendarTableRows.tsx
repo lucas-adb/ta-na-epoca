@@ -1,4 +1,4 @@
-import { getFoodWithMonthsFiltered, getFoodsWithMonths } from "@/services/foodService";
+import { getFoodsWithMonths } from "@/services/foodService";
 
 // const only created so that the correct bg colors are loaded
 const tailwindDynamicColorsFix: { [key: string]: string } = {
@@ -26,11 +26,7 @@ export default async function CalendarTableRows(): Promise<JSX.Element> {
             {monthsNumbers.map((monthId) => (
               <td key={monthId} className="px-4 py-2 text-center">
                 {row.months.some((m) => m.monthId === monthId) ? (
-                  <p
-                    className={`text-4xl font-bold ${fontColor}`}
-                  >
-                    ·
-                  </p>
+                  <p className={`text-4xl font-bold ${fontColor}`}>·</p>
                 ) : (
                   ""
                 )}

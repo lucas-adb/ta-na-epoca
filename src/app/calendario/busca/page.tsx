@@ -2,6 +2,7 @@ import CalendarTableSearch from "@/components/CalendarTableSearch";
 import SearchForm from "@/components/SearchForm";
 import { CalendarSearchProps, SearchParams } from "@/types/types";
 import { NextPageContext } from "next";
+import Link from "next/link";
 
 const CalendarSearch = (props: CalendarSearchProps) => {
   // console.log('props', props);
@@ -15,16 +16,19 @@ const CalendarSearch = (props: CalendarSearchProps) => {
         Sazonalidade de produtos
       </h1>
 
-      <div>
-        <SearchForm />
-      </div>
+      <Link
+        href="/calendario"
+        className="mx-auto px-4 py-2 bg-green-900 text-white rounded-lg shadow-md hover:scale-105 transition-transform"
+      >
+        Limpar Pesquisa
+      </Link>
 
       <div>
-        <CalendarTableSearch food={food} type={type} month={month}/>
+        <CalendarTableSearch food={food} type={type} month={month} />
       </div>
     </main>
   );
-}
+};
 
 CalendarSearch.getInitialProps = async (ctx: NextPageContext) => {
   const { query } = ctx;
@@ -33,8 +37,8 @@ CalendarSearch.getInitialProps = async (ctx: NextPageContext) => {
   return {
     food,
     type,
-    month
+    month,
   };
-}
+};
 
 export default CalendarSearch;

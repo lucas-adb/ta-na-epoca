@@ -20,15 +20,15 @@ export type FoodWithMonths = {
   type: TypeOfFood;
 };
 
-export type SearchParams = { food: string, type: string, month: string };
+export type SearchParams = { food: string; type: string; month: string };
 
 export type CalendarSearchProps = {
-  params: object,
-  searchParams: { food: string, type: string, month: string }
-}
+  params: object;
+  searchParams: { food: string; type: string; month: string };
+};
 
 export type CalendarSearchParams = {
   food?: string;
   type?: TypeOfFood;
   month?: number;
-}
+};

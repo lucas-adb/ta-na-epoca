@@ -1,4 +1,9 @@
-import { calendarSearchParamsValidation } from "@/services/foodService";
+import {
+  getFoodByParams,
+  prepareSearchParams,
+  validateSearchParams,
+} from "@/services/foodService";
+import { FoodWithMonths } from "@/types/types";
 
 // const only created so that the correct bg colors are loaded
 const tailwindDynamicColorsFix: { [key: string]: string } = {
@@ -20,11 +25,13 @@ export default async function CalendarTableRowsSearch({
   type: any;
   month: any;
 }): Promise<JSX.Element> {
-  console.log("food", food === "" ? "empty" : food);
-  console.log("type", type);
-  console.log("month", month ? month : "empty");
+  let rows: FoodWithMonths[] = [];
 
-  const rows = await calendarSearchParamsValidation(food, type, month);
+  if (validateSearchParams(food, type, month)) {
+    const params = prepareSearchParams(food, type, month);
+    const result = await getFoodByParams(params);
+    rows = Array.isArray(result) ? result : [result];
+  }
 
   const monthsNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
@@ -32,7 +39,9 @@ export default async function CalendarTableRowsSearch({
     <>
       {(!rows || rows.length === 0) && (
         <tr className="hover:bg-gray-100">
-          <td className="px-4 py-2">Nenhum resultado encontrado</td>
+          <td className="px-4 py-4 text-center" colSpan={13}>
+            Nenhum resultado encontrado
+          </td>
         </tr>
       )}
 

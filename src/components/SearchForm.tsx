@@ -25,13 +25,13 @@ export default function SearchForm() {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="flex justify-center gap-4">
+      <form onSubmit={handleSubmit} className="flex justify-center gap-4 flex-col sm:flex-row">
         <input
           type="search"
           placeholder="Pesquisar"
           value={foodName}
           onChange={(e) => setFoodName(e.target.value)}
-          className="w-1/2 px-4 py-2 rounded-lg border border-gray-200 shadow-md"
+          className="sm:w-1/2 px-4 py-2 rounded-lg border border-gray-200 shadow-md"
         />
 
         <select
@@ -39,9 +39,9 @@ export default function SearchForm() {
           id="type"
           value={selectedType}
           onChange={(e) => setSelectedType(e.target.value)}
-          className="rounded-lg border-gray-200 shadow-md"
+          className="rounded-lg border-gray-200 shadow-md cursor-pointer"
         >
-          <option value="">Tipo:</option>
+          <option value="">Tipo</option>
           <option value="FRUIT">Fruta</option>
           <option value="VEGETABLE">Vegetal</option>
         </select>
@@ -51,9 +51,9 @@ export default function SearchForm() {
           id="type"
           value={selectedMonth}
           onChange={(e) => setSelectedMonth(e.target.value)}
-          className="rounded-lg border-gray-200 shadow-md"
+          className="rounded-lg border-gray-200 shadow-md cursor-pointer"
         >
-          <option value="">Mês:</option>
+          <option value="">Mês</option>
           <option value="01">Jan</option>
           <option value="02">Fev</option>
           <option value="03">Mar</option>
@@ -70,7 +70,7 @@ export default function SearchForm() {
 
         <button
           type="submit"
-          className="px-4 py-2 bg-green-900 text-white rounded-lg shadow-md"
+          className="px-4 py-2 bg-green-900 text-white rounded-lg shadow-md hover:scale-105 transition-transform"
         >
           Pesquisar
         </button>
