@@ -1,6 +1,14 @@
-import CalendarTableRows from "./CalendarTableRows";
+import CalendarSearchedTableRows from "./CalendarSearchedTableRows";
 
-export default function CalendarTable() {
+export default function CalendarSearchedTable({
+  food,
+  type,
+  month,
+}: {
+  food: string;
+  type: string;
+  month: string;
+}) {
   return (
     <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-md bg-gray-50 max-w-screen-xl mx-auto">
       <table className="w-full divide-y-2 divide-gray-200 text-sm">
@@ -25,7 +33,7 @@ export default function CalendarTable() {
         </thead>
 
         <tbody className="divide-y divide-gray-200">
-          <CalendarTableRows />
+          <CalendarSearchedTableRows food={food} type={type} month={month} />
         </tbody>
       </table>
     </div>
