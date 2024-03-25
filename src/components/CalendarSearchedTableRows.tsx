@@ -16,7 +16,7 @@ const tailwindDynamicColorsFix: { [key: string]: string } = {
   orange: "text-orange-400",
 };
 
-export default async function CalendarTableRowsSearch({
+export default async function CalendarSearchedTableRows({
   food,
   type,
   month,

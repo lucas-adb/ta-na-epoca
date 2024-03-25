@@ -1,5 +1,4 @@
-import CalendarTableSearch from "@/components/CalendarTableSearch";
-import SearchForm from "@/components/SearchForm";
+import CalendarSearchedTable from "@/components/CalendarSearchedTable";
 import { CalendarSearchProps, SearchParams } from "@/types/types";
 import { NextPageContext } from "next";
 import Link from "next/link";
@@ -24,7 +23,7 @@ const CalendarSearch = (props: CalendarSearchProps) => {
       </Link>
 
       <div>
-        <CalendarTableSearch food={food} type={type} month={month} />
+        <CalendarSearchedTable food={food} type={type} month={month} />
       </div>
     </main>
   );
