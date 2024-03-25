@@ -4,7 +4,7 @@ import { CalendarSearchProps, SearchParams } from "@/types/types";
 import { NextPageContext } from "next";
 
 const CalendarSearch = (props: CalendarSearchProps) => {
-  console.log('props', props);
+  // console.log('props', props);
 
   const searchParams = props.searchParams;
   const { food, type, month } = searchParams;

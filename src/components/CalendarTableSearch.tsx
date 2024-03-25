@@ -1,4 +1,3 @@
-import CalendarTableRows from "./CalendarTableRows";
 import CalendarTableRowsSearch from "./CalendarTableRowsSearch";
 
 export default function CalendarTableSearch({

@@ -1,4 +1,5 @@
-import { PrismaClient } from "@prisma/client";
+import { CalendarSearchParams, TypeOfFood } from "@/types/types";
+import { Prisma, PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 export async function getFoods() {
@@ -16,78 +17,6 @@ export async function getFoodsWithMonths() {
   return foods;
 }
 
-export async function getFoodWithMonthsFiltered(params: {
-  food?: string,
-  type?:"FRUIT" | "VEGETABLE",
-  month?: string
-}) {
-  if (!params) {
-    return await getFoodsWithMonths();
-  }
-
-  if (params.food && params.type && params.month) {
-    const monthNumber = parseInt(params.month);
-
-    const foods = await prisma.food.findMany({
-      where: {
-        name: {
-          contains: params.food,
-          mode: "insensitive",
-        },
-        type: params.type,
-        months: {
-          some: {
-            monthId: {
-              equals: monthNumber,
-            },
-          },
-        },
-      },
-      include: {
-        months: true,
-      },
-    });
-
-    return foods;
-
-  }
-
-  if (params.type && params.month) {
-    const monthNumber = parseInt(params.month);
-
-    const foods = await prisma.food.findMany({
-      where: {
-        type: params.type,
-        months: {
-          some: {
-            monthId: {
-              equals: monthNumber,
-            },
-          },
-        },
-      },
-      include: {
-        months: true,
-      },
-    });
-
-    return foods;
-  }
-
-  if (params.type) {
-    const foods = await prisma.food.findMany({
-      where: {
-        type: params.type,
-      },
-      include: {
-        months: true,
-      },
-    });
-
-    return foods;
-  }
-}
-
 export async function getFoodsOfCurrentMonth() {
   const currentMonth = new Date().getMonth();
 
@@ -101,6 +30,50 @@ export async function getFoodsOfCurrentMonth() {
         },
       },
     },
+    include: {
+      months: true,
+    },
+  });
+
+  return foods;
+}
+
+export async function calendarSearchParamsValidation(food: string, type: TypeOfFood, month: string) {
+  const params: CalendarSearchParams = {};
+
+  if (food) params.food = food;
+  if (type) params.type = type;
+  if (month) params.month = parseInt(month);
+
+  return await getFoodByParams(params);
+}
+
+export async function getFoodByParams(params: { food?: string, type?: TypeOfFood, month?: number }) {
+  const whereClause: Prisma.FoodWhereInput = {};
+
+  if (params.food) {
+    whereClause.name = {
+      startsWith: params.food,
+      mode: "insensitive",
+    };
+  }
+
+  if (params.type) {
+    whereClause.type = params.type;
+  }
+
+  if (params.month) {
+    whereClause.months = {
+      some: {
+        monthId: {
+          equals: params.month,
+        },
+      },
+    };
+  }
+
+  const foods = await prisma.food.findMany({
+    where: whereClause,
     include: {
       months: true,
     },

@@ -12,11 +12,8 @@ const tailwindDynamicColorsFix: { [key: string]: string } = {
 };
 
 export default async function CalendarTableRows(): Promise<JSX.Element> {
-  const test = await getFoodWithMonthsFiltered({ type: "FRUIT" });
   const rows = await getFoodsWithMonths();
   const monthsNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
-  console.log(test);
 
   return (
     <>

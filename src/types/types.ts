@@ -1,8 +1,10 @@
+export type TypeOfFood = "FRUIT" | "VEGETABLE";
+
 export type Food = {
   id: number;
   name: string;
   color: string;
-  type: "FRUIT" | "VEGETABLE";
+  type: TypeOfFood;
 };
 
 export type FoodWithMonths = {
@@ -15,7 +17,7 @@ export type FoodWithMonths = {
   id: number;
   name: string;
   color: string;
-  type: "FRUIT" | "VEGETABLE";
+  type: TypeOfFood;
 };
 
 export type SearchParams = { food: string, type: string, month: string };
@@ -23,4 +25,10 @@ export type SearchParams = { food: string, type: string, month: string };
 export type CalendarSearchProps = {
   params: object,
   searchParams: { food: string, type: string, month: string }
+}
+
+export type CalendarSearchParams = {
+  food?: string;
+  type?: TypeOfFood;
+  month?: number;
 }
