@@ -1,0 +1,265 @@
+name,color,type,JANUARY,FEBRUARY,MARCH,APRIL,MAY,JUNE,JULY,AUGUST,SEPTEMBER,OCTOBER,NOVEMBER,DECEMBER
+Abacate Avocado,green,FRUIT,low,low,low,low,medium,medium,high,high,high,high,high,low
+Abacate Breda,green,FRUIT,low,low,low,low,low,low,low,medium,high,high,high,medium
+Abacate Fortuna,green,FRUIT,low,low,high,high,high,high,high,medium,low,low,low,low
+Abacate Geada,green,FRUIT,high,high,low,low,low,low,low,low,low,low,low,low
+Abacate Margarida,green,FRUIT,low,low,low,low,low,medium,medium,medium,high,high,high,high
+Abacate Quintal,green,FRUIT,low,low,medium,high,high,high,high,medium,low,low,low,low
+Abacaxi Havai,yellow,FRUIT,medium,low,low,low,low,high,low,low,low,low,low,medium
+Abacaxi Pérola,yellow,FRUIT,medium,low,medium,low,low,low,low,low,medium,medium,high,high
+Abiu,yellow,FRUIT,high,low,low,medium,low,low,low,low,medium,low,medium,medium
+Acerola,red,FRUIT,high,high,high,high,medium,low,low,low,medium,high,high,high
+Ameixa Nacional,purple,FRUIT,medium,medium,low,low,low,low,low,low,low,low,medium,high
+Amora,purple,FRUIT,low,low,low,low,low,low,low,medium,high,medium,high,high
+Atemoia,green,FRUIT,low,low,low,medium,high,high,high,high,medium,low,low,low
+Avelã,brown,FRUIT,low,low,low,low,low,low,low,high,medium,low,low,low
+Banana Maçã,yellow,FRUIT,medium,medium,low,low,low,low,medium,high,high,high,high,medium
+Banana Nanica,yellow,FRUIT,medium,medium,medium,low,high,low,low,medium,low,medium,medium,low
+Banana Ouro,yellow,FRUIT,high,high,low,low,low,medium,high,low,low,medium,medium,high
+Banana Prata MG,yellow,FRUIT,low,low,medium,medium,medium,medium,high,medium,medium,high,high,medium
+Banana Prata SP,yellow,FRUIT,medium,medium,high,low,low,low,medium,high,high,low,medium,low
+Banana Terra,yellow,FRUIT,high,low,medium,low,low,low,low,medium,medium,medium,high,high
+Cacau,brown,FRUIT,low,low,high,low,low,low,low,low,low,low,low,low
+Caju,red,FRUIT,high,low,low,low,low,low,low,low,medium,high,low,medium
+Caqui Chocolate Kyoto,orange,FRUIT,low,medium,medium,high,high,medium,medium,low,low,low,low,low
+Caqui Fuyu,orange,FRUIT,low,low,high,high,high,high,medium,low,low,low,low,low
+Caqui Giombo,orange,FRUIT,low,low,medium,high,high,high,low,low,low,low,low,low
+Caqui Rama Forte,orange,FRUIT,low,low,high,high,high,medium,low,low,low,low,low,low
+Carambola,yellow,FRUIT,high,high,high,medium,medium,high,high,high,low,low,low,medium
+Castanha Nacional,brown,FRUIT,medium,low,low,low,low,medium,low,low,medium,high,medium,high
+Coco Verde,brown,FRUIT,high,medium,medium,low,low,low,low,low,medium,medium,high,high
+Cupuaçu,brown,FRUIT,high,high,high,high,high,high,high,high,high,high,low,low
+Embu,green,FRUIT,high,high,low,low,low,low,low,low,low,low,low,low
+Figo,purple,FRUIT,high,high,high,high,medium,medium,low,low,low,low,low,high
+Framboesa,red,FRUIT,medium,medium,high,low,low,low,low,low,low,low,low,low
+Goiaba,green,FRUIT,medium,high,high,medium,low,low,low,low,low,low,low,low
+Grapefruit,orange,FRUIT,low,low,medium,low,low,low,low,low,low,low,high,medium
+Graviola,green,FRUIT,medium,low,low,low,high,low,low,low,low,high,high,low
+Jabuticaba,purple,FRUIT,low,low,low,low,low,low,low,high,medium,high,low,low
+Jaca,green,FRUIT,high,high,high,high,medium,low,low,low,low,medium,high,high
+Jambo,red,FRUIT,high,low,low,low,low,low,low,low,medium,medium,high,medium
+Jatobá,brown,FRUIT,low,low,medium,low,low,low,low,high,high,low,low,low
+Jenipapo,brown,FRUIT,high,low,low,low,medium,low,low,medium,low,low,low,low
+Kiwi Nacional,brown,FRUIT,low,low,medium,high,high,high,medium,low,low,low,low,low
+Laranja Baia,orange,FRUIT,low,low,low,low,medium,medium,high,high,high,medium,low,low
+Laranja Lima,orange,FRUIT,high,low,low,low,low,low,high,high,high,high,high,low
+Laranja Pera,orange,FRUIT,high,medium,medium,low,low,low,low,medium,medium,medium,medium,medium
+Laranja Seleta,orange,FRUIT,medium,medium,high,high,high,high,high,medium,low,low,low,low
+Laranja Valência,orange,FRUIT,high,medium,medium,medium,low,low,low,low,medium,high,high,high
+Lichia,red,FRUIT,high,low,low,low,low,low,low,low,low,low,low,high
+Lima Pérsia,green,FRUIT,low,low,low,low,low,low,medium,high,high,high,medium,low
+Limão Galego,green,FRUIT,high,high,medium,medium,low,low,low,low,low,low,low,low
+Limão Rosa,green,FRUIT,low,low,low,medium,high,high,high,high,high,medium,low,low
+Limão Siciliano,green,FRUIT,medium,medium,low,low,low,low,medium,high,high,high,medium,high
+Limão Taiti,green,FRUIT,high,medium,medium,medium,low,low,low,low,low,low,medium,high
+Longan,yellow,FRUIT,low,high,high,medium,low,low,low,low,low,low,low,low
+Maçã Eva,red,FRUIT,high,low,low,low,low,low,low,low,low,low,low,medium
+Maçã Fuji,red,FRUIT,medium,low,low,medium,high,high,high,high,high,high,high,medium
+Maçã Gala,red,FRUIT,high,medium,low,low,low,low,medium,medium,medium,high,high,high
+Maçã Golden Del,red,FRUIT,low,low,low,low,low,high,high,high,high,high,high,high
+Mamão Formosa,red,FRUIT,high,medium,low,medium,high,medium,medium,high,medium,medium,medium,low
+Mamão Havaí,orange,FRUIT,medium,medium,low,medium,medium,low,low,low,medium,high,high,medium
+Manga Bourbon,orange,FRUIT,low,low,low,low,low,low,low,low,low,high,high,high
+Manga Coquinho,orange,FRUIT,low,low,low,low,low,low,low,low,low,medium,high,medium
+Manga Espada,orange,FRUIT,low,low,low,low,low,low,low,low,low,high,high,low
+Manga Haden,orange,FRUIT,low,low,low,low,low,medium,medium,medium,high,medium,high,medium
+Manga Keity,orange,FRUIT,medium,high,high,high,high,high,high,medium,high,high,low,high
+Manga Lolita,orange,FRUIT,low,low,low,low,low,low,low,low,low,medium,high,high
+Manga Palmer,orange,FRUIT,high,medium,low,low,low,low,low,low,low,medium,medium,high
+Manga Rosa,orange,FRUIT,medium,low,low,medium,medium,medium,medium,medium,medium,high,high,high
+Manga Shelly,orange,FRUIT,low,low,low,low,low,low,low,low,medium,high,medium,low
+Manga Tommy,orange,FRUIT,low,low,low,low,low,low,high,low,low,medium,medium,medium
+Mangostim,purple,FRUIT,low,low,high,medium,low,low,high,high,high,high,low,low
+Maracujá Azedo,yellow,FRUIT,medium,medium,medium,medium,low,low,medium,high,high,high,low,low
+Maracujá Doce,yellow,FRUIT,high,low,low,high,high,high,medium,medium,low,low,low,medium
+Melancia Baby,green,FRUIT,high,medium,low,low,low,low,low,medium,medium,medium,high,high
+Melancia,green,FRUIT,medium,medium,medium,medium,low,low,low,low,medium,medium,medium,high
+Melão Amarelo,yellow,FRUIT,high,medium,low,medium,low,low,low,medium,medium,high,high,high
+Melão Gália,green,FRUIT,high,medium,low,low,low,low,low,medium,high,high,high,high
+Melão Net Melon,green,FRUIT,low,low,low,high,low,low,low,low,low,low,low,low
+Melão Orange,orange,FRUIT,medium,medium,low,low,low,low,medium,medium,medium,high,high,high
+Melão Pele de Sapo,green,FRUIT,medium,medium,medium,low,low,low,low,low,low,medium,high,high
+Mexerica Rio,orange,FRUIT,low,low,low,low,medium,medium,high,high,high,medium,low,low
+Mirtilo,blue,FRUIT,low,low,low,low,low,low,low,low,medium,medium,low,high
+Morango Comum,red,FRUIT,low,low,low,low,low,low,high,high,high,medium,medium,medium
+Nectarina Nacional,red,FRUIT,low,low,low,low,low,low,low,low,low,medium,high,high
+Nêspera,yellow,FRUIT,low,low,low,low,low,medium,high,high,high,high,low,low
+Nozes Pecan,brown,FRUIT,low,low,low,low,low,low,low,low,low,low,low,high
+Pera Nacional,green,FRUIT,low,high,high,medium,high,high,high,medium,low,low,low,low
+Pêssego Aurora,red,FRUIT,low,low,low,low,low,low,low,low,low,medium,high,medium
+Pêssego Chimarrita,red,FRUIT,high,low,low,low,low,low,low,low,low,low,high,high
+Pêssego Dourado,red,FRUIT,low,low,low,low,low,low,low,low,low,high,high,low
+Pêssego Eragil,red,FRUIT,high,low,low,low,low,low,low,low,low,low,low,low
+Pêssego Fascinio,red,FRUIT,low,low,low,low,low,low,low,low,low,low,high,medium
+Pêssego Kampai,red,FRUIT,low,low,low,low,low,low,low,low,low,high,high,low
+Pêssego Nacional,red,FRUIT,medium,low,low,low,low,low,low,low,low,low,medium,high
+Pêssego Rubimel,red,FRUIT,low,low,low,low,low,low,low,low,low,medium,high,low
+Pêssego Tropic Beauty,red,FRUIT,low,low,low,low,low,low,low,low,medium,high,low,low
+Pêssego Xiripa,red,FRUIT,medium,low,low,low,low,low,low,low,low,low,low,high
+Physalis,orange,FRUIT,low,low,low,low,low,low,low,low,low,low,low,high
+Pinha,green,FRUIT,high,medium,low,medium,medium,medium,low,low,low,low,low,low
+Pitaia,pink,FRUIT,high,high,high,medium,low,low,low,low,low,low,low,medium
+Pitanga,red,FRUIT,low,medium,low,low,low,low,low,low,medium,high,medium,low
+Quincam,orange,FRUIT,low,medium,medium,medium,high,high,high,high,high,low,low,low
+Rambutã,red,FRUIT,medium,low,low,medium,medium,high,high,medium,low,low,low,medium
+Romã,red,FRUIT,low,medium,low,low,low,low,low,low,medium,high,medium,low
+Sapoti,brown,FRUIT,medium,low,low,low,low,low,low,medium,high,high,high,high
+Seriguela,orange,FRUIT,medium,high,high,low,low,low,low,low,low,low,low,low
+Tamarillo,red,FRUIT,medium,medium,low,low,low,low,low,medium,high,high,medium,medium
+Tangerina Cravo,orange,FRUIT,low,medium,high,high,medium,medium,low,low,low,low,low,low
+Tangerina Decopom,orange,FRUIT,low,low,low,low,low,medium,medium,high,high,high,high,low
+Tangerina Murcote,orange,FRUIT,low,low,low,low,low,low,medium,high,high,high,high,medium
+Tangerina Ole,orange,FRUIT,low,low,low,low,medium,high,high,medium,high,medium,low,low
+Tangerina Poncã,orange,FRUIT,low,low,low,medium,high,high,high,medium,low,low,low,low
+Uva Arra 15,purple,FRUIT,low,low,low,medium,high,high,high,medium,medium,medium,high,high
+Uva Benitaka,purple,FRUIT,medium,medium,low,low,low,low,low,low,low,low,low,high
+Uva Brasil,purple,FRUIT,high,high,medium,low,low,low,low,medium,low,low,low,medium
+Uva Centenial,purple,FRUIT,high,low,low,low,low,low,low,low,low,low,low,medium
+Uva Crinsom,purple,FRUIT,low,low,low,low,low,low,medium,medium,high,high,high,high
+Uva Isabel,purple,FRUIT,medium,medium,low,low,medium,medium,low,medium,low,medium,high,high
+Uva Isis,purple,FRUIT,low,low,low,low,high,high,high,high,medium,high,high,high
+Uva Italia,purple,FRUIT,medium,medium,medium,low,low,low,low,low,low,low,low,high
+Uva Melodia,purple,FRUIT,low,low,low,low,medium,low,medium,medium,low,medium,high,high
+Uva Niagara,purple,FRUIT,medium,low,low,low,low,low,low,low,low,low,low,high
+Uva Red Globe,purple,FRUIT,low,low,low,low,low,low,high,high,high,medium,medium,low
+Uva Rubi,purple,FRUIT,medium,medium,high,medium,low,low,low,medium,low,low,low,medium
+Uva Thompson,purple,FRUIT,medium,low,low,low,low,low,low,low,low,medium,high,high
+Uva Vitoria,purple,FRUIT,medium,low,low,low,medium,medium,medium,medium,medium,medium,high,high
+Abóbora D´Agua,green,VEGETABLE,medium,high,high,medium,medium,low,low,low,low,low,low,medium
+Abóbora Japonesa,green,VEGETABLE,medium,medium,high,high,high,high,low,low,low,low,low,low
+Abóbora Moranga,green,VEGETABLE,low,low,low,low,low,low,low,high,high,high,medium,low
+Abóbora Paulista,green,VEGETABLE,medium,medium,high,high,high,medium,medium,medium,medium,high,high,low
+Abóbora Seca,green,VEGETABLE,medium,medium,high,high,high,high,low,low,low,low,medium,medium
+Abobrinha Brasileira,green,VEGETABLE,high,high,medium,high,low,medium,low,low,low,medium,medium,low
+Abobrinha Italiana,green,VEGETABLE,medium,low,medium,medium,high,high,low,medium,medium,high,high,low
+Alcachofra,purple,VEGETABLE,low,low,low,low,low,low,low,medium,high,high,medium,low
+Batata Doce Amarela,yellow,VEGETABLE,low,low,medium,high,high,high,medium,medium,low,low,low,low
+Batata Doce Branca,brown,VEGETABLE,high,high,high,medium,medium,high,low,medium,medium,high,high,medium
+Batata Doce Rosada,purple,VEGETABLE,medium,high,high,medium,medium,low,low,low,low,low,low,medium
+Batata Doce Roxa,purple,VEGETABLE,low,medium,medium,medium,high,high,low,high,medium,medium,low,low
+Batata Yakon,yellow,VEGETABLE,high,high,medium,medium,medium,medium,low,low,low,low,medium,low
+Berinjela Comum,purple,VEGETABLE,high,medium,medium,medium,medium,medium,low,medium,medium,medium,high,medium
+Berinjela Japonesa,purple,VEGETABLE,low,medium,medium,medium,low,low,low,low,medium,high,high,medium
+Beterraba,purple,VEGETABLE,high,medium,medium,medium,medium,medium,low,high,high,high,high,medium
+Cará,brown,VEGETABLE,medium,low,medium,high,high,high,medium,high,high,high,medium,low
+Cenoura,orange,VEGETABLE,high,medium,medium,medium,medium,medium,low,medium,medium,medium,medium,high
+Chuchu,green,VEGETABLE,medium,medium,high,high,medium,medium,low,medium,medium,high,high,low
+Ervilha Torta,green,VEGETABLE,low,low,low,medium,medium,high,medium,high,high,low,low,low
+Feijão de Corda,green,VEGETABLE,high,high,medium,high,medium,low,low,low,low,low,medium,high
+Gengibre,brown,VEGETABLE,high,low,low,medium,high,high,low,low,low,low,low,low
+Inhame,brown,VEGETABLE,high,low,medium,high,high,high,medium,high,medium,medium,medium,low
+Jiló,green,VEGETABLE,high,high,high,high,high,high,medium,medium,medium,low,high,medium
+Lakio,green,VEGETABLE,medium,low,low,low,low,low,low,low,medium,high,high,medium
+Lenkon,brown,VEGETABLE,low,medium,high,high,high,high,medium,high,medium,low,low,low
+Mandioca,brown,VEGETABLE,low,low,medium,medium,high,high,high,high,high,medium,medium,low
+Mandioquinha,brown,VEGETABLE,low,low,low,medium,high,high,high,high,medium,medium,low,low
+Maxixe,green,VEGETABLE,high,high,medium,medium,low,low,low,low,high,high,high,high
+Miyoga,purple,VEGETABLE,high,low,low,low,low,low,low,low,low,low,low,high
+Nigagori,green,VEGETABLE,medium,high,high,medium,low,low,low,low,low,low,low,low
+Pepino Caipira,green,VEGETABLE,medium,medium,high,high,medium,low,low,low,low,medium,medium,low
+Pepino Comum,green,VEGETABLE,high,medium,high,high,low,low,medium,low,low,medium,medium,low
+Pepino Japonês,green,VEGETABLE,high,high,medium,medium,medium,low,low,low,low,medium,high,medium
+Pimenta Cambuci,green,VEGETABLE,high,high,medium,medium,low,medium,low,low,medium,high,high,medium
+Pimenta Dedo de Moça,red,VEGETABLE,low,low,low,low,medium,medium,medium,high,medium,high,medium,medium
+Pimenta Malagueta/Malaguetão,red,VEGETABLE,low,low,low,low,low,medium,high,high,high,medium,medium,medium
+Pimenta Verde,green,VEGETABLE,medium,low,low,low,medium,medium,high,medium,low,low,medium,low
+Pimenta Verde Americana,green,VEGETABLE,high,low,medium,low,low,low,low,low,low,medium,medium,high
+Pimentão Amarelo,yellow,VEGETABLE,medium,low,low,low,low,low,low,low,medium,low,medium,high
+Pimentão Verde,green,VEGETABLE,high,low,low,medium,medium,low,low,low,low,medium,medium,high
+Pimentão Vermelho,red,VEGETABLE,medium,low,low,low,low,low,low,low,low,low,low,high
+Quiabo,green,VEGETABLE,high,high,high,medium,low,low,low,low,medium,medium,medium,medium
+Taquenoco,green,VEGETABLE,low,low,low,low,low,low,low,low,low,medium,high,medium
+Tomate Caqui,red,VEGETABLE,high,medium,low,medium,medium,high,high,low,medium,medium,medium,medium
+Tomate Carmem,red,VEGETABLE,high,medium,low,low,medium,medium,low,low,low,low,high,medium
+Tomate Cereja,red,VEGETABLE,high,high,medium,low,low,low,low,low,low,medium,high,high
+Tomate Debora,red,VEGETABLE,high,high,medium,low,medium,medium,medium,low,low,medium,high,high
+Tomate Holandês,red,VEGETABLE,high,low,low,low,low,low,low,low,medium,medium,high,high
+Tomate Italiano - Pizzadoro,red,VEGETABLE,high,medium,medium,low,medium,medium,low,low,low,low,high,high
+Tomate Rasteiro,red,VEGETABLE,low,low,low,low,low,medium,high,high,high,high,low,low
+Tomate Sweet Grape,red,VEGETABLE,medium,low,low,low,low,low,medium,medium,medium,high,medium,high
+Ume,green,VEGETABLE,low,low,low,low,high,medium,low,low,high,medium,low,low
+Vagem Macarrão,green,VEGETABLE,high,low,low,low,medium,low,low,medium,low,low,high,high
+Vagem Manteiga,green,VEGETABLE,medium,low,low,medium,medium,low,low,high,medium,high,high,high
+Vagem Metro,green,VEGETABLE,high,high,medium,high,medium,medium,low,low,low,low,low,medium
+Acelga Chinesa,green,VEGETABLE,low,low,low,low,medium,low,medium,high,medium,medium,medium,medium
+Acelga,green,VEGETABLE,medium,high,high,high,medium,low,low,low,low,low,medium,medium
+Agrião,green,VEGETABLE,low,high,high,high,medium,medium,low,low,low,low,low,low
+Agrião Hidropônico,green,VEGETABLE,medium,high,high,high,medium,medium,low,low,low,low,low,low
+Alecrim,green,VEGETABLE,low,low,low,low,medium,low,high,medium,medium,medium,low,medium
+Alface Americana,green,VEGETABLE,medium,high,medium,medium,low,low,low,low,low,low,medium,high
+Alface Crespa,green,VEGETABLE,medium,high,high,high,medium,medium,low,low,low,low,medium,low
+Alface Crespa Hidropônica,green,VEGETABLE,medium,high,high,high,medium,medium,low,low,low,low,medium,medium
+Alface Lisa,green,VEGETABLE,high,high,medium,medium,medium,low,low,low,medium,medium,medium,low
+Alface Lisa Hidropônica,green,VEGETABLE,low,low,low,low,medium,low,medium,high,medium,medium,medium,low
+Alface Mimosa,green,VEGETABLE,high,high,medium,low,medium,low,low,low,low,medium,low,low
+Alface Mimosa Hidropônica,green,VEGETABLE,medium,low,low,low,medium,low,medium,high,medium,medium,medium,low
+Alface Romana,green,VEGETABLE,high,low,low,low,medium,low,medium,high,medium,medium,medium,low
+Alface Romana Hidropônica,green,VEGETABLE,low,low,low,low,low,medium,low,low,high,medium,medium,low
+Alfavaca,green,VEGETABLE,medium,medium,low,low,medium,high,high,high,medium,medium,medium,medium
+Alho Porro,green,VEGETABLE,low,low,medium,medium,high,medium,high,medium,low,medium,low,high
+Almeirão,green,VEGETABLE,high,high,high,high,medium,low,low,medium,low,medium,medium,low
+Almeirão Hidropônico,green,VEGETABLE,low,low,medium,low,medium,medium,medium,high,high,high,high,high
+Almeirão Pão de Açucar,green,VEGETABLE,medium,high,high,medium,high,high,low,low,low,medium,high,low
+Aspargo,green,VEGETABLE,medium,low,low,medium,medium,medium,medium,low,low,low,high,medium
+Beterraba com Folhas,purple,VEGETABLE,medium,low,low,low,low,low,medium,high,high,high,high,medium
+Brócolos Ninja,green,VEGETABLE,low,low,low,low,low,low,medium,high,high,high,medium,medium
+Brócolos Ramoso,green,VEGETABLE,low,low,low,low,medium,high,high,high,medium,low,low,low
+Broto de Alfafa,green,VEGETABLE,medium,medium,low,low,medium,high,high,high,high,medium,high,medium
+Capim Cidreira,green,VEGETABLE,low,low,low,low,low,low,medium,high,high,medium,low,low
+Catalonha,green,VEGETABLE,medium,medium,high,high,high,high,high,high,high,medium,medium,low
+Cebolete,green,VEGETABLE,low,low,low,low,low,low,low,low,medium,high,high,high
+Cebolinha,green,VEGETABLE,medium,low,high,high,high,medium,high,high,medium,medium,medium,low
+Cenoura com Folhas,orange,VEGETABLE,medium,low,medium,low,medium,low,high,medium,high,high,high,medium
+Chicória,green,VEGETABLE,high,low,medium,low,medium,low,low,high,medium,medium,medium,low
+Coentro,green,VEGETABLE,low,low,low,low,low,medium,high,high,high,low,high,high
+Cogumelo Eryngui,brown,VEGETABLE,low,low,low,low,low,medium,high,medium,medium,medium,medium,medium
+Cogumelo Hiratake,brown,VEGETABLE,medium,low,low,medium,low,low,medium,medium,medium,medium,low,high
+Cogumelo Paris,brown,VEGETABLE,medium,low,low,low,low,medium,medium,low,low,low,high,high
+Cogumelo Porto Belo,brown,VEGETABLE,low,low,low,low,medium,low,low,medium,high,medium,high,high
+Cogumelo Shimeji,brown,VEGETABLE,medium,low,medium,low,low,low,low,medium,high,high,medium,medium
+Cogumelo Shitake,brown,VEGETABLE,medium,medium,medium,low,medium,low,low,medium,medium,medium,high,high
+Couve Manteiga,green,VEGETABLE,low,medium,low,low,medium,medium,high,high,high,medium,medium,low
+Couve de Bruxelas,green,VEGETABLE,medium,low,low,low,low,medium,medium,high,high,high,high,medium
+Couve-Flor,green,VEGETABLE,low,low,low,low,medium,low,medium,high,high,medium,medium,low
+Endívia,green,VEGETABLE,high,medium,medium,medium,low,medium,medium,medium,low,low,low,high
+Endro,green,VEGETABLE,low,low,medium,high,low,medium,medium,medium,high,high,medium,high
+Erva Doce,green,VEGETABLE,medium,low,low,low,medium,low,low,medium,medium,medium,medium,high
+Escarola,green,VEGETABLE,high,high,high,medium,high,medium,medium,high,high,high,medium,low
+Escarola Hidropônica,green,VEGETABLE,low,low,low,low,low,low,low,high,medium,high,high,high
+Espinafre,green,VEGETABLE,high,high,medium,medium,high,medium,high,high,high,high,high,low
+Espinafre Hidropônico,green,VEGETABLE,high,medium,medium,medium,high,low,high,high,high,high,medium,medium
+Estragão,green,VEGETABLE,low,medium,medium,medium,medium,low,low,low,medium,high,high,high
+Gengibre com Folhas,brown,VEGETABLE,high,high,high,medium,medium,low,low,low,low,low,low,high
+Gobô,brown,VEGETABLE,low,low,low,low,low,low,low,medium,medium,medium,medium,high
+Hana Nira,green,VEGETABLE,high,high,high,low,low,low,low,low,low,high,medium,medium
+Hortelã,green,VEGETABLE,high,medium,high,high,high,low,low,low,low,low,low,low
+Louro,green,VEGETABLE,medium,medium,low,medium,medium,low,low,low,medium,high,high,low
+Manjericão,green,VEGETABLE,low,low,low,low,low,low,high,high,high,high,medium,medium
+Manjerona,green,VEGETABLE,medium,low,medium,medium,medium,low,medium,high,high,high,medium,high
+Milho Verde,yellow,VEGETABLE,low,low,low,low,medium,high,medium,low,low,low,low,low
+Mostarda,green,VEGETABLE,low,medium,high,high,medium,low,medium,medium,medium,high,high,medium
+Mostarda Hidropônica,green,VEGETABLE,low,low,medium,low,low,low,medium,high,medium,high,high,high
+Moyashi,green,VEGETABLE,medium,high,medium,low,medium,low,low,medium,high,high,medium,medium
+Nabo,green,VEGETABLE,high,low,medium,low,medium,low,low,medium,high,high,high,medium
+Orégano,green,VEGETABLE,high,low,medium,medium,medium,low,medium,medium,medium,medium,high,high
+Palmito Pupunha,green,VEGETABLE,high,low,low,low,low,low,medium,low,low,low,medium,medium
+Rabanete,purple,VEGETABLE,low,low,medium,medium,low,low,high,high,medium,medium,high,medium
+Radicchio,purple,VEGETABLE,high,medium,high,medium,low,low,low,low,medium,medium,medium,high
+Repolho Verde Liso,green,VEGETABLE,medium,medium,high,medium,medium,low,medium,medium,medium,medium,low,low
+Repolho Roxo,purple,VEGETABLE,high,medium,high,high,high,low,medium,medium,medium,high,high,high
+Rúcula,green,VEGETABLE,high,high,high,low,low,low,medium,low,low,low,low,low
+Rúcula Hidropônica,green,VEGETABLE,medium,medium,medium,low,low,low,low,low,medium,high,high,medium
+Salsa,green,VEGETABLE,medium,low,medium,low,low,low,medium,medium,low,medium,medium,high
+Salsão Branco/Verde,green,VEGETABLE,medium,medium,high,medium,medium,medium,medium,low,low,low,low,high
+Sálvia,green,VEGETABLE,medium,low,low,low,medium,low,medium,medium,medium,high,high,high
+Tomilho,green,VEGETABLE,low,low,low,low,low,low,low,medium,low,high,high,high
+Alho Nacional,purple,VEGETABLE,medium,low,low,low,low,low,medium,high,high,high,high,medium
+Amendoim com Casca,brown,VEGETABLE,low,low,low,medium,medium,high,medium,medium,medium,low,low,low
+Amendoim sem Casca,brown,VEGETABLE,low,low,medium,low,high,low,high,high,high,medium,high,low
+Batata Asterix,yellow,VEGETABLE,low,low,medium,high,high,medium,medium,medium,medium,low,medium,high
+Batata Lavada,yellow,VEGETABLE,low,low,low,low,low,low,medium,medium,low,low,low,high
+Cebola Nacional,brown,VEGETABLE,high,medium,medium,low,low,medium,high,high,high,high,high,high
+Cebola Pérola,brown,VEGETABLE,medium,low,low,low,low,low,medium,medium,medium,medium,medium,high
+Cebola Roxa,purple,VEGETABLE,high,high,high,medium,low,low,low,medium,low,low,medium,high
+Coco Seco,brown,VEGETABLE,medium,low,medium,medium,low,low,high,medium,high,high,high,low
+Pinhão,brown,VEGETABLE,low,low,low,medium,high,high,low,low,low,low,low,low

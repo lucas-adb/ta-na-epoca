@@ -9,6 +9,7 @@ const tailwindDynamicColorsFix: { [key: string]: string } = {
   blue: "text-blue-400",
   purple: "text-purple-400",
   orange: "text-orange-400",
+  pink: "text-pink-400",
 };
 
 export default async function CalendarTableRows(): Promise<JSX.Element> {
