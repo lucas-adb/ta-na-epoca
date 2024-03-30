@@ -19,6 +19,7 @@ const tailwindDynamicColorsFix: { [key: string]: string } = {
   blue: "bg-blue-400",
   purple: "bg-purple-400",
   orange: "bg-orange-400",
+  pink: "bg-pink-400",
 };
 
 export const FoodItem = ({ food }: { food: Food }) => {
