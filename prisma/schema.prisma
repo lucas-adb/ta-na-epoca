@@ -34,6 +34,7 @@ enum MonthName {
 model Food {
   id Int @id @default(autoincrement())
   name String @unique
+  name_formatted String
   color String
   type FoodType
   months FoodsMonths[]

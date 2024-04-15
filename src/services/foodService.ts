@@ -1,8 +1,8 @@
 import {
   CalendarSearchParams,
-  FoodWithMonths,
   TypeOfFood,
 } from "@/types/types";
+import { removeAccents } from "@/utils/utils";
 import { Prisma, PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
@@ -72,8 +72,10 @@ export async function getFoodByParams(params: {
   const whereClause: Prisma.FoodWhereInput = {};
 
   if (params.food) {
-    whereClause.name = {
-      startsWith: params.food,
+    const foodFormatted = removeAccents(params.food).toLowerCase();
+
+    whereClause.name_formatted = {
+      startsWith: foodFormatted,
       mode: "insensitive",
     };
   }
